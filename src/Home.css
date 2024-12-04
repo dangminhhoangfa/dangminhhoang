@@ -1,0 +1,42 @@
+.home {
+  text-align: center;
+  padding: 20px;
+  background-image: url("");
+  background-size: cover; /* Đảm bảo hình nền phủ kín */
+  background-position: center; /* Căn giữa hình nền */
+  background-repeat: no-repeat; /* Không lặp lại hình nền */
+  color: rgb(14, 2, 2); /* Đổi màu chữ để hiển thị rõ trên nền */
+  min-height: 100vh; /* Đảm bảo trang chiếm toàn bộ chiều cao */
+}
+
+.home-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.home-links a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+.home-links img {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-links img:hover
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-links p {
+  margin-top: 10px;
+  font-weight: bold;
+}
